@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), autoplay=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), microphone=(), midi=(), payment=(), usb=()" />
+  <title>ALIENS STOLE MY COW — Indie Studio</title>
+  <meta name="color-scheme" content="dark" />
+  <meta name="description" content="Aliens Stole My Cow — an indie studio building tight, atmospheric, replayable games." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="top"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="brand__icon" aria-hidden="true"><span class="brand__glyph">◬</span></span>
+      <span class="sr-only">Home</span>
+    </a>
+
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="navPanel">
+      <span class="burger__bar"></span>
+      <span class="burger__bar"></span>
+      <span class="burger__bar"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav class="navPanel" id="navPanel" aria-label="Primary">
+      <a href="#games">GAMES</a>
+      <a href="#studio">STUDIO</a>
+      <a href="#news">NEWS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Alien HUD landing">
+      <div class="hero__bg" role="img" aria-label="Alien background"></div>
+      <div class="hud" aria-hidden="true">
+        <div class="hud__frame">
+          <span class="corner tl"></span>
+          <span class="corner tr"></span>
+          <span class="corner bl"></span>
+          <span class="corner br"></span>
+
+          <div class="hud__noise"></div>
+          <div class="hud__scan"></div>
+
+          <div class="hud__lines">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+            <span class="line l4"></span>
+            <span class="dot d1"></span>
+            <span class="dot d2"></span>
+            <span class="dot d3"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__titleBlock">
+          <h1 class="title">
+            ALIENS STOLE <span class="dim">MY</span> COW
+          </h1>
+          <p class="subtitle">INDIE GAME STUDIO</p>
+        </div>
+
+        <div class="hero__buttons" role="navigation" aria-label="Actions">
+          <a class="hudBtn" href="#games" data-look="projects" data-label="PROJECTS">
+            <span class="hudBtn__icon" aria-hidden="true">▣</span>
+            <span class="hudBtn__stack">
+              <span class="hudBtn__human">⟒⟁⟟⟒⌖⍜⎎⎔</span>
+              <span class="hudBtn__alien" aria-hidden="true">GAMES</span>
+            </span>
+            <span class="hudBtn__meta" aria-hidden="true">×1</span>
+          </a>
+
+          <a class="hudBtn" href="#studio" data-look="about" data-label="ABOUT">
+            <span class="hudBtn__icon" aria-hidden="true">◧</span>
+            <span class="hudBtn__stack">
+              <span class="hudBtn__human">𓂀⏃⏚⍜⎍⏁</span>
+              <span class="hudBtn__alien" aria-hidden="true">ABOUT</span>
+            </span>
+            <span class="hudBtn__meta" aria-hidden="true">⟡</span>
+          </a>
+
+          <a class="hudBtn hudBtn--ghost" href="#contact" data-look="contact" data-label="CONTACT">
+            <span class="hudBtn__icon" aria-hidden="true">▭</span>
+            <span class="hudBtn__stack">
+              <span class="hudBtn__human">⎅⍜⋊⏃⎎⋈⟒</span>
+              <span class="hudBtn__alien" aria-hidden="true">CONTACT</span>
+            </span>
+            <span class="hudBtn__meta" aria-hidden="true">⟂</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="wrap">
+        <div class="sectionHead">
+          <h2>FEATURED</h2>
+          <p>Latest release + two in development.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card card--live">
+            <div class="cardTop">
+              <span class="tag tag--live">LATEST RELEASE</span>
+              <span class="chip">PC • STEAM</span>
+            </div>
+            <h3>Kodaik</h3>
+            <p>Survive if we let you, win a life-time of ASMC Games.</p>
+            <div class="actions">
+              <a class="btn btn--primary" href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer">VIEW</a>
+              <a class="btn" href="#news">PATCH</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="cardTop">
+              <span class="tag">IN DEVELOPMENT</span>
+              <span class="chip">PC • STEAM</span>
+            </div>
+            <h3>PROJECT: UELEN ’91</h3>
+            <p>Round-based FPS horror survival with dungeon-style upgrades.</p>
+            <div class="actions">
+              <a class="btn btn--primary" href="#contact">FOLLOW</a>
+              <a class="btn" href="#news">DEVLOG</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="cardTop">
+              <span class="tag">IN DEVELOPMENT</span>
+              <span class="chip">PC • STEAM</span>
+            </div>
+            <h3>PROJECT: ARENA SLAVE</h3>
+            <p>Brutal arena climber. Tight sessions. “One more run” tuning.</p>
+            <div class="actions">
+              <a class="btn btn--primary" href="#contact">UPDATES</a>
+              <a class="btn" href="#studio">STUDIO</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="studio">
+      <div class="wrap split">
+        <div>
+          <h2>OUR MISSION</h2>
+          <p class="lead">We make games the AAA industry forgot how to make.</p>
+          <p class="muted">There is no hand holding here, we design for players to feel the pressure.</p>
+        </div>
+        <div class="panel">
+          <h3>OUR PRINCIPLES</h3>
+          <ul>
+            <li>NO SBMM, GL HF ALL</li>
+            <li>NO Pay-to-win, you will EARN everything</li>
+            <li>Skill-based progression</li>
+            <li>Bragging rights systems</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="wrap">
+        <div class="sectionHead">
+          <h2>NEWS</h2>
+          <p>Intel drops from the mothership.</p>
+        </div>
+        <div class="timeline">
+          <article class="note">
+            <h3>Kodaik Released</h3>
+            <p>Kodaik releases 28/02/26, Goodluck surviving Human scum.</p>
+          </article>
+          <article class="note">
+            <h3>Socials created</h3>
+            <p>Youtube. Tiktok. Instagram. X</p>
+          </article>
+          <article class="note">
+            <h3>Mothership launched</h3>
+            <p>Site v1.0 live, 27/02/26.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+      <div class="wrap contact">
+        <div>
+          <h2>CONTACT</h2>
+          <p class="lead">Press, partnerships, creators — reach out.</p>
+          <p class="muted">Static for now: mailto + socials. Form later.</p>
+        </div>
+        <div class="contactActions">
+          <a class="btn btn--primary" href="mailto:hello@aliensstolemycow.com">EMAIL</a>
+          <a class="btn" href="https://x.com" target="_blank" rel="noopener noreferrer">X</a>
+          <a class="btn" href="https://discord.com" target="_blank" rel="noopener noreferrer">DISCORD</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap foot">
+        <span>© <span id="year"></span> ALIENS STOLE MY COW</span>
+        <a href="#top">TOP</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
